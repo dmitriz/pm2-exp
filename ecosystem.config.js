@@ -19,7 +19,7 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'root',
+      user : 'e',
       host : 'l',
       ref  : 'origin/master',
       repo : 'git@github.com:dmitriz/pm2-exp.git',
