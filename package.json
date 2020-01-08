@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0",
+  "name": "b",
+  "main": "index.js",
+  "description": "Test project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmitriz"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "budo index.js:build.js --live --open",
+    "wdev": "open http://localhost:8080/ && webpack-dev-server",
+    "test": "karma start"
+  },
+  "keywords": [],
+  "author": "Dmitri Zaitsev <dmitri14@gmail.com> (https://github.com/dmitriz)",
+  "license": "MIT",
+  "dependencies": {
+    "cpsfy": "^3.2.2",
+    "node-ipc": "^9.1.1",
+    "ws": "^7.2.1"
+  }
+}
