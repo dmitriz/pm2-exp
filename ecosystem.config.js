@@ -19,11 +19,11 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'e',
+      user : 'root',
       host : 'l',
       ref  : 'origin/master',
-      // repo : 'git@github.com:repo.git',
-      // path : '/var/www/production',
+      repo : 'git@github.com:dmitriz/pm2-deploy-test',
+      path : 'test',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
