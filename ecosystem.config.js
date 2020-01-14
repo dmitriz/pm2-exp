@@ -30,14 +30,12 @@ module.exports = {
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
     dev : {
-      production : {
-        user : 'e',
-        host : 'l',
-        ref  : 'origin/master',
-        repo : 'git@github.com:dmitriz/pm2-exp.git',
-        path : '/home/e/dev',
-        'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
-      }
+      user : 'e',
+      host : 'l',
+      ref  : 'origin/master',
+      repo : 'git@github.com:dmitriz/pm2-exp.git',
+      path : '/home/e/dev',
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
 }
