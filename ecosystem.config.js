@@ -6,9 +6,9 @@ module.exports = {
     // Options reference: https://pm2.keymetrics.io/docs/usage/application-declaration/
     // args: 'one two',
     // instances: 1,
-    // autorestart: true,
+    autorestart: true,
     // watch: false,
-    // max_memory_restart: '1G',
+    max_memory_restart: '1G',
     env: {
       NODE_ENV: 'development'
     },
@@ -24,6 +24,16 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:dmitriz/pm2-exp.git',
       path : '/home/e/prod2',
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+    }
+  },
+  dev : {
+    production : {
+      user : 'e',
+      host : 'l',
+      ref  : 'origin/master',
+      repo : 'git@github.com:dmitriz/pm2-exp.git',
+      path : '/home/e/dev',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
