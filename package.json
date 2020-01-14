@@ -8,10 +8,9 @@
     "url": "https://github.com/dmitriz"
   },
   "scripts": {
-    "start": "npm run dev",
-    "dev": "budo index.js:build.js --live --open",
-    "wdev": "open http://localhost:8080/ && webpack-dev-server",
-    "test": "karma start"
+    "start": "npm run sync && npm run deploy",
+    "sync": "git add . && git commit && git pull && git push",
+    "deploy": "pm2 deploy production setup"
   },
   "keywords": [],
   "author": "Dmitri Zaitsev <dmitri14@gmail.com> (https://github.com/dmitriz)",
