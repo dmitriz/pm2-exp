@@ -10,7 +10,7 @@
   "scripts": {
     "start": "npm run sync && npm run deploy",
     "sync": "git add . && git commit && git pull && git push",
-    "deploy": "pm2 deploy production setup"
+    "deploy": "pm2 deploy dev"
   },
   "keywords": [],
   "author": "Dmitri Zaitsev <dmitri14@gmail.com> (https://github.com/dmitriz)",
