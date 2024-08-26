@@ -16,7 +16,7 @@
   "author": "Dmitri Zaitsev <dmitri14@gmail.com> (https://github.com/dmitriz)",
   "license": "MIT",
   "dependencies": {
-    "cpsfy": "^3.2.2",
+    "cpsfy": "^6.0.0",
     "node-ipc": "^12.0.0",
     "ws": "^8.17.1"
   }
