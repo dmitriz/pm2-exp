@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "cpsfy": "^6.0.0",
-    "node-ipc": "^12.0.0",
+    "node-ipc": "^14.0.0",
     "ws": "^8.17.1"
   }
 }
